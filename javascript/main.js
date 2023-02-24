@@ -42,16 +42,3 @@ const closeNav = () => {
   closeBtn.style.display = "none";
   menuBtn.style.display = "inline-block";
 };
-
-closeBtn.addEventListener("click", closeNav);
-
-const wrapper = document.querySelector(".wrapper");
-const loginLink = document.querySelector(".login-link");
-const registerlink = document.querySelector(".login-register");
-
-registerlink.addEventListener("click", () => {
-  wrapper.classList.add("active");
-});
-registerlink.addEventListener("click", () => {
-  wrapper.classList.remove("active");
-});
